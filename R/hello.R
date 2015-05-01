@@ -14,9 +14,9 @@
 #   Test Package:              'Ctrl + Shift + T'
 
 hello <- function() {
-  # involve_glmnet <- glmnet:::fix.lam(1)
+  involve_glmnet <- glmnet:::fix.lam(1)
   # glmnet::rmult(list(.1,.2,.3))
-  # involve_foreach <- foreach::getDoParName()
+  involve_foreach <- foreach::getDoParName()
 
   return( "Hello, world!" )
 }
