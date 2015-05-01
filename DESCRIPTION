@@ -1,0 +1,10 @@
+Package: Premiss
+Type: Package
+Title: A "Predictive Risk Model for Intensive Safety Services Selection"
+Version: 0.1-1
+Date: 2015-05-01
+Author: Will Beasley
+Maintainer: Will Beasley <wibeasley@hotmail.com>
+Description: A "Predictive Risk Model for Intensive Safety Services Selection" to accompany the DHS Waiver project.
+License: GPL-2
+LazyData: TRUE
