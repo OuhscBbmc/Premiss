@@ -1,0 +1,29 @@
+PackratFormat: 1.4
+PackratVersion: 0.4.3.25
+RVersion: 3.2.0
+Repos: CRAN=http://cran.rstudio.com,
+    CRANextra=http://www.stats.ox.ac.uk/pub/RWin,
+    BioCsoft=http://bioconductor.org/packages/3.2/bioc,
+    BioCann=http://bioconductor.org/packages/3.2/data/annotation,
+    BioCexp=http://bioconductor.org/packages/3.2/data/experiment,
+    BioCextra=http://bioconductor.org/packages/3.2/extra
+
+Package: digest
+Source: CRAN
+Version: 0.6.8
+Hash: de202f956596a476d09304e3a2ebf1e5
+
+Package: packrat
+Source: github
+Version: 0.4.3-25
+Hash: 145364480ae13dd1b65c21fd871819526caef59f
+GithubRepo: packrat
+GithubUsername: rstudio
+GithubRef: master
+GithubSha1: 145364480ae13dd1b65c21fd871819526caef59f
+
+Package: testthat
+Source: CRAN
+Version: 0.9.1
+Hash: b1375083546bc11c52a1af84098f995c
+Requires: digest

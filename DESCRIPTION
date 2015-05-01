@@ -19,15 +19,7 @@ Depends:
     R(>= 3.0.0),
     stats
 Imports:
-    dplyr,
-    foreach,
-    glmnet,
-    magrittr,
-    plyr
 Suggests:
-    knitr,
-    testit,
     testthat (>= 0.9)
 License: GPL-2
 LazyData: TRUE
-VignetteBuilder: knitr
