@@ -1,24 +1,13 @@
-# Sample .travis.yml for R projects from https://github.com/craigcitro/r-travis
+# Travis's native R Image (http://docs.travis-ci.com/user/languages/r/)
 
-language: c
+language: r
 
-before_install:
-  - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
-  - chmod 755 ./travis-tool.sh
-  - ./travis-tool.sh bootstrap
+sudo: required
 
-install:
-  - ./travis-tool.sh install_deps
+warnings_are_errors: true
 
-script: ./travis-tool.sh run_tests
+r_github_packages:
+  - jimhester/covr
 
-after_failure:
-  - ./travis-tool.sh dump_logs
-
-env:
-  - WARNINGS_ARE_ERRORS=1
-
-notifications:
-  email:
-    on_success: change
-    on_failure: change
+after_success:
+  - Rscript -e 'library(covr);coveralls()'
