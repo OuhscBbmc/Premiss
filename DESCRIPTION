@@ -1,13 +1,33 @@
 Package: Premiss
 Type: Package
-Title: A "Predictive Risk Model for Intensive Safety Services Selection"
-Version: 0.1-1
+Version: 0.1-2
 Date: 2015-05-01
-Author: Will Beasley
-Maintainer: Will Beasley <wibeasley@hotmail.com>
+Title: A "Predictive Risk Model for Intensive Safety Services Selection"
 Description: A "Predictive Risk Model for Intensive Safety Services Selection" to accompany the DHS Waiver project.
+Authors@R: c(person("Will", "Beasley", role = c("aut", "cre"), email =
+    "wibeasley@hotmail.com"), person("David", "Bard", role = "aut"),
+    person("Michael", "Hunter", role = "aut"), person(given="Som",
+    family="Bohora", role = "aut"))
+Author: Will Beasley [aut, cre],
+    David Bard [aut],
+    Mike Hunter [aut],
+    Som Bohora [aut]
+Maintainer: Will Beasley <wibeasley@hotmail.com>
+URL: https://github.com/OuhscBbmc/Premiss, http://ouhsc.edu/bbmc/
+BugReports: https://github.com/OuhscBbmc/Premiss/issues
+Depends:
+    R(>= 3.0.0),
+    stats
+Imports:
+    dplyr,
+    foreach,
+    glmnet,
+    magrittr,
+    plyr
+Suggests:
+    knitr,
+    testit,
+    testthat (>= 0.9)
 License: GPL-2
 LazyData: TRUE
-Suggests: testthat,
-    knitr
 VignetteBuilder: knitr
