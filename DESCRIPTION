@@ -8,3 +8,6 @@ Maintainer: Will Beasley <wibeasley@hotmail.com>
 Description: A "Predictive Risk Model for Intensive Safety Services Selection" to accompany the DHS Waiver project.
 License: GPL-2
 LazyData: TRUE
+Suggests: testthat,
+    knitr
+VignetteBuilder: knitr
