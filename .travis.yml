@@ -8,6 +8,7 @@ warnings_are_errors: true
 
 r_github_packages:
   - jimhester/covr
+  - rstudio/packrat
 
 after_success:
   - Rscript -e 'library(covr);coveralls()'
