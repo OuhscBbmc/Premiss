@@ -3,8 +3,8 @@ Type: Package
 Title: A "Predictive Risk Model for Intensive Safety Services Selection"
 Version: 0.1-1
 Date: 2015-05-01
-Author: Will Beasley
-Maintainer: Will Beasley <wibeasley@hotmail.com>
+Authors@R: c(person("Will", "Beasley", role = c("aut", "cre"), email =
+    "wibeasley@hotmail.com", comment = c(ORCID = "0000-0002-5613-5006")))
 Description: A "Predictive Risk Model for Intensive Safety Services Selection" to accompany the DHS Waiver project.
 License: GPL-2
 LazyData: TRUE
